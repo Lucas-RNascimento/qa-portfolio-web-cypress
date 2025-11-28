@@ -1,0 +1,23 @@
+{
+  "name": "qa-portfolio-web-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-RNascimento/qa-portfolio-web-cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucas-RNascimento/qa-portfolio-web-cypress/issues"
+  },
+  "homepage": "https://github.com/Lucas-RNascimento/qa-portfolio-web-cypress#readme",
+  "devDependencies": {
+    "cypress": "^15.7.0"
+  }
+}
