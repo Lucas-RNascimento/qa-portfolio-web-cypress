@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
-    "report:merge": "mochawesome-merge reports/mocha/*.json > reports/mocha/report.json",
+    "report:merge": "mochawesome-merge reports/mocha/.jsons/*.json > reports/mocha/report.json",
     "report:generate": "marge reports/mocha/report.json -f report -o reports/mocha",
     "report": "npm run report:merge && npm run report:generate"
   },

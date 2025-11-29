@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Criar pastas de relatório
-        run: mkdir -p reports/mocha
+        run: mkdir -p reports/mocha/.jsons
 
       - name: Rodar Cypress em modo headless
         run: npm test
