@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "report:merge": "mochawesome-merge reports/mocha/*.json > reports/mocha/report.json",
+    "report:generate": "marge reports/mocha/report.json -f report -o reports/mocha",
+    "report": "npm run report:merge && npm run report:generate"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,10 @@
   },
   "homepage": "https://github.com/Lucas-RNascimento/qa-portfolio-web-cypress#readme",
   "devDependencies": {
-    "cypress": "^15.7.0"
+    "cypress": "^15.7.0",
+    "cypress-mochawesome-reporter": "^3.8.4",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.3.2"
   }
 }
