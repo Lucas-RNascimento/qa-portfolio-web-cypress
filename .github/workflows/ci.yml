@@ -21,6 +21,9 @@ jobs:
 
       - name: Instalar dependências
         run: npm install
+      
+      - name: Garantir instalação do reporter
+        run: npm install cypress-mochawesome-reporter --save-dev
 
       - name: Criar pastas de relatório
         run: mkdir -p reports/mocha/.jsons
