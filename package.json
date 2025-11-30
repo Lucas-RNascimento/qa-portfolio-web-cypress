@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --reporter cypress-mochawesome-reporter --reporter-options reportDir=reports/mocha,json=true,overwrite=false,html=false",
-    "report:merge": "mochawesome-merge reports/mocha/.jsons/*.json > reports/mocha/report.json",
-    "report:generate": "marge reports/mocha/report.json -f report -o reports/mocha",
-    "report": "npm run report:merge && npm run report:generate"
+    "test": "cypress run --reporter cypress-mochawesome-reporter"
   },
   "repository": {
     "type": "git",
